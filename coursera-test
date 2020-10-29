@@ -17,7 +17,7 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
 }
-@media (min-width: 40rem) {
+@media only screen and  (min-width: 40rem) {
   body {
     padding: 2rem;
   }
