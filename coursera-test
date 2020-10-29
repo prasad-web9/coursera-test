@@ -1,0 +1,155 @@
+<Doctype.html>
+<html>
+<head>
+<style>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: #f8f8f8;
+}
+body {
+  padding: 2rem 0.5rem;
+  font-family:Sans-serif;
+  color: #32325d;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+@media (min-width: 40rem) {
+  body {
+    padding: 2rem;
+  }
+}
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.cards {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cards {
+    width: 50%;
+  }
+  .full-card{
+   width: 100% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cards {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cards {
+    width: 33.3%;
+  }
+}
+.cards .card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #999;
+  width: 100%;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  border : 2px solid black;
+}
+.cards .card-item:hover .card-image {
+  opacity: 1;
+}
+.cards .card-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  font-size:15px;
+  line-height: 1.5em;
+  text-align: left;
+  color: black;
+}
+.cards .card-title {
+  font-size: 25px;
+  line-height: 1.1em;
+  color: #32325d;
+  margin-bottom: 0.2em;
+}
+.cards .card-image {
+  height: 40px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.91;
+  float : left;
+}
+.head{
+text-align : center;
+}
+.name{
+float : right;
+padding : 3px;
+border : 2px solid black;
+width: 110px;
+}
+.card1{
+background : #ffc0cb70;
+}
+.card2{
+background : #da1e1e8c;
+    color: #fff;
+}
+.card3{
+background : #ffff004a;
+}
+
+</style>
+</head>
+<body>
+<h2 class = "head">our content</h2s>
+<div class="container">
+  <div class="cards">
+    <div class="card-item">
+      <div class="card-image">
+	  <div class = "name card1">React</div>
+      </div>
+      <div class="card-info">       
+        <p class="card-intro"> React is a front-end library that runs on a browser. Like most libraries, this one runs on web servers like Apache or with backends like PHP or Rails.</p>
+      </div>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card-item">
+      <div class="card-image">
+	   <div class = "name card2">XML</div>
+      </div>
+      <div class="card-info">       
+        <p class="card-intro">Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.</p>
+      </div>
+    </div>
+  </div>
+  <div class="cards full-card">
+    <div class="card-item">
+      <div class="card-image">
+	      <div class = "name card3">Jquery</div>
+      </div>
+      <div class="card-info">
+        <p class="card-intro">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
